@@ -8,7 +8,14 @@
     <h2>Currently Available Ninjas</h2>
 
     <ul>
-        <li>Ninjas Here</li>
+        @foreach ($ninjas as $ninja)
+            <li>
+                <p>
+                    {{ $ninja["name"]}}
+                </p>
+                <a href="/ninjas/{{ $ninja["id"] }}">View Details</a>
+            </li>
+        @endforeach
     </ul>
 </body>
 </html>
