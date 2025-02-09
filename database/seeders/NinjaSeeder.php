@@ -13,6 +13,6 @@ class NinjaSeeder extends Seeder
      */
     public function run(): void
     {
-        Ninja::factory()->count(10)->create();
+        Ninja::factory()->count(50)->create();
     }
 }
